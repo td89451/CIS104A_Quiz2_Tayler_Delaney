@@ -1,0 +1,126 @@
+1-6. Multi-line comment with JSDoc tags
+8. Pragma - Turning on strict mode.
+9. Importing the readline-sync library and assigning it to constant variable PROMPT.
+11-13. Declaring variables continueResponse, numStudents, and array students and array rewardStudents.
+15-19. Multi-line comment with JSDoc tags.
+20. Method signature line for main dispatch method. Opening curly brace signifying start of block.
+21. Start of if statement with conditions(if continueResponse is not 0 and is not 1).
+22. Calls the setContinueResponse method.
+23. Closing curly brace signifying end of if statement
+24. Calls the setNumStudents method.
+25. Calls the populateStudents method.
+26. Start of while statement with condition(while continueResponse is equal to 1). Opening curly brace signifying start of block.
+27. Calls determineRewardStudent method.
+28. Calls displayRewardStudent method.
+29. Calls setContinueResponse method.
+30. Closing curly brace signifying end of while statement.
+31. Closing curly brace signifying end of main dispatch method.
+33. Calls main dispatch method.
+35-39. Multi-line comment with JSDoc tags.
+40. Method signature line for setContinueResponse mutator method.
+41. Start of if statement with conditions(if continueResponse is equal to 1 or equal to 0). Opening curly brace signifying start of if statement block.
+42. Setting continueResponse equal to the users input converted to a number.
+43. Start of while statement with conditions(while continueResponse is not equal to 0 and is not equal to 1). Opening curly brace signifying start of while statement block.
+44. Printing to screen the value of continueResponse and informing user it is an incorrect value.
+45. Re-prompting the user with same code from line 42.
+46. Closing curly brace signifying end of while statement block.
+47. Closing curly brace signifying end of if statement block, start of else statement, opening curly brace signifying start of else statement block.
+48. Setting continueResponse equal to 1.
+49. Closing curly brace signifying end of else statement block.
+50. Closing curly brace signifying end of setContinueResponse mutator method.
+52-56. Multi-line comment with JSDoc tags,
+57. Method signature line for setNumStudents mutator method. Opening curly brace signifying start of setNumStudents block.
+58. Declaring and initializing local constant variables MIN_STUDENTS and MAX_STUDENTS.
+59. Start of while statement with conditions(while numStudents is undefined, or less than MIN_STUDENTS, or greater than MAX_STUDENTS). Opening curly brace signifying start of while statement block.
+60. Sets numStudents equal to the number user is prompted for. Converts user input to number.
+61. Beginning of if statement with conditions(if numStudents is not a number or is less than MIN_STUDENTS, or is greater than MAX_STUDENTS). Opening curly brace signifying start of if statement block.
+62. Print to screen value of numStudents is incorrect value.
+63. Closing curly brace signifying end of if statement block.
+64. Closing curly brace signifying end of while statement block.
+65. Closing curly brace signifying end of setNumStudents mutator method.
+67-71. Multi-line comment with JSDocs tags.
+72. Method signature line for populateStudents method.
+73. Declaring and initializing MIN_GRADE and MAX_GRADE constant variables.
+74. Beginning of c-style for loop with condition (while i is less than numStudents). Opening curly brace signifying start of for loop block.
+75. Sets students[i] (i being the current iteration of the for loop) equal to an array, turning the students array into an array of arrays.
+76. Print to screen on a new line "Student" followed by whatever variable i is equal to plus 1. 
+77. Start of while statement with conditions(if the first index of students[i] is empty, or doesn't meet the conditions of the regular expression).
+78. Setting first index of students[i] to user input.
+79. Beginning of if statement checking user input meets conditions of regular expression.
+80. Printing to screen the value of first index of students[i] is invalid.
+81. Closing curly brace signifiyng end of if statement block.
+82. Closing curly brace signifying end of while statement block.
+83. Start of while statement with conditions(if the second index of students[i] is empty, or doesn't meet the conditions of the regular expression).
+84. Setting second index of students[i] to user input.
+85. Beginning of if statement checking user input meets conditions of regular expression.
+86. Printing to screen the value of second index of students[i] is invalid.
+87. Closing curly brace signifiyng end of if statement block.
+88. Closing curly brace signifying end of while statement block.
+89. Start of while statement with conditions(if the third index of students[i] is empty, or doesn't meet the conditions of the regular expression).
+90. Setting third index of students[i] to user input.
+91. Beginning of if statement checking user input meets conditions of regular expression.
+92. Printing to screen the value of third index of students[i] is invalid.
+93. Closing curly brace signifiyng end of if statement block.
+94. Closing curly brace signifying end of while statement block.
+95. Start of while statement with conditions(if the fourth index of students[i] is empty, or doesn't meet the conditions of the regular expression).
+96. Setting fourth index of students[i] to user input.
+97. Beginning of if statement checking user input meets conditions of regular expression.
+98. Printing to screen the value of fourth index of students[i] is invalid.
+99. Closing curly brace signifiyng end of if statement block.
+100. Closing curly brace signifying end of while statement block.
+101. Start of while statement with conditions(if the fifth index of students[i] is empty, or doesn't meet the conditions of the regular expression).
+102. Setting fifth index of students[i] to user input.
+103. Beginning of if statement checking user input meets conditions of regular expression.
+104. Printing to screen the value of fifth index of students[i] is invalid.
+105. Closing curly brace signifiyng end of if statement block.
+106. Closing curly brace signifying end of while statement block.
+107. Closing curly brace signifying end of for loop block.
+108. Closing curly brace signifying end of populateStudents method.
+110-114. Multi-line comment with JSDoc tags.
+115. Method signature line for determineRewardStudent method. Opening curly brace signifying start of determineRewardStudent method block.
+116. Declaring and initializing variable rewarded.
+117. Beginning of while loop with condition(while rewarded is undefined). Opening curly brace signifying start of while loop block.
+118. Set variable rewarded equal to true.
+119. Declaring and initializing variable randomStudent to random number.
+120. Start of if statement with conditions(rewardStudents.length is greater than 0, and rewardStudents.length is less than students.length). Opening curly brace signifying start of if statement block.
+121. Beginning of for of loop that iterates over rewardStudents array. Opening curly brace signifying start of for of loop block.
+122. Beginning of if statement with condition(if student is equal to randomStudent). Opening curly brace signifying start of if statement block.
+123. Setting rewarded equal to false.
+124. Break statement breaking out of for of loop.
+125. Closing curly brace signifying end of if statement block.
+126. Closing curly brace signifying end of for of loop block.
+127. Beginning of if statement with conditions(if rewarded equals true). Opening curly brace signifying start of if statement block.
+128. Pushing value of randomStudent onto end of rewardStudents array.
+129. break statement breaking out of while loop.
+130. Closing curly brace signifying end of if statement block.
+131. Closing curly brace, else statement, opening curly brace signifying start of else statement block.
+132. Initializing rewardStudents into an array.
+133. Pushing value of randomStudent onto end of rewardStudents array.
+134. Closing curly brace signifying end of else statement.
+135. Closing curly brace signifying end of while statement.
+136. Printing to screen value of rewardStudents.
+137. Closing curly brace signifying end of determineRewardStudent method.
+139-143. Multi-line comment with JSDoc tags.
+144. Method signature line for displayRewardStudent utility method.
+145. Printing to screen student chosen for random reward.
+146. Closing curly brace signifying end of displayRewardStudent method.
+
+https://github.com/IntroductoryProgrammingLogic/Lesson6/blob/master/Code.js
+
+Variable - A container that holds information
+Constant - A type of variable with a value that is constant.
+Cohesion - How the statements inside a method serve to accomplish the methods purpose
+Assignment - Assign a value to a variable
+Initialization - Initialization of a variable happens when you assign it a starting value.
+Method - A block of code meant to tackle one task
+Braces - Opening "{" and closing "}" curly braces signify the beginning and end of blocks of code
+Array - A series of values in computer memory. Where a variable stores 1 value, an array stores multiple(or even other arrays)
+Looping - A loop can be used to perform a set of tasks as long as the condition set is met
+Selection - One course of action is taken based on the answer to a question
+Signature lines - Where a methods name and parameters are declared
+Declaration - A declaration is a statement that provides a data type and identifier for a variable.
+Auto increment - Increasing the value of an item by 1 using ++;
+Numeric testing - If a value does not equal, is equal, is greater than, less then, etc
+String testing - Testing if a string contains certain characters or is a certain length etc
+Concatentation - Connecting things together. 
+Commenting - Comments are lines in the code that are ignored by the compiler
